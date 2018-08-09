@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaCalc.L", "MediaCalc.L\MediaCalc.L.csproj", "{1D1418FF-3ECC-4ADF-A746-EC9B6985E897}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaCalc.V", "MediaCalc.V\MediaCalc.V.csproj", "{7991D809-C3A7-4D8C-8931-C1881D245F69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMediaKalk", "TestMediaKalk\TestMediaKalk.csproj", "{8B026D3A-4364-4799-ACCB-A49BEDAB382D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D1418FF-3ECC-4ADF-A746-EC9B6985E897}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D1418FF-3ECC-4ADF-A746-EC9B6985E897}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D1418FF-3ECC-4ADF-A746-EC9B6985E897}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D1418FF-3ECC-4ADF-A746-EC9B6985E897}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7991D809-C3A7-4D8C-8931-C1881D245F69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7991D809-C3A7-4D8C-8931-C1881D245F69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7991D809-C3A7-4D8C-8931-C1881D245F69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7991D809-C3A7-4D8C-8931-C1881D245F69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B026D3A-4364-4799-ACCB-A49BEDAB382D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B026D3A-4364-4799-ACCB-A49BEDAB382D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B026D3A-4364-4799-ACCB-A49BEDAB382D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B026D3A-4364-4799-ACCB-A49BEDAB382D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

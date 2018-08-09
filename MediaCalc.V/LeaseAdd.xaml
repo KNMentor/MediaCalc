@@ -1,0 +1,38 @@
+﻿<Window x:Class="MediaCalc.V.LeaseAdd"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MediaCalc.V"
+        mc:Ignorable="d"
+        Title="LeaseAdd" Height="338.167" Width="300">
+    <Grid>
+        <StackPanel HorizontalAlignment="Left" Height="300" Margin="102,2,0,0" VerticalAlignment="Top" Width="185">
+            <ComboBox x:Name="comboBox_flats"  SelectedItem="{Binding Flat}"/>
+            <ComboBox x:Name="comboBox_users"  SelectedItem="{Binding User}"/>
+            <DatePicker SelectedDate="{Binding From}"/>
+            <DatePicker SelectedDate="{Binding To}"/>
+            <TextBox Height="23" TextWrapping="Wrap"  Text="{Binding CounterStartHotWater}" />
+            <TextBox Height="23" TextWrapping="Wrap"  Text="{Binding CounterStartColdWater}" />
+            <TextBox Height="23" TextWrapping="Wrap"  Text="{Binding CounterStartEnergy}" />
+            <TextBox Height="23" TextWrapping="Wrap"  Text="{Binding CounterEndHotWater}" />
+            <TextBox Height="23" TextWrapping="Wrap"  Text="{Binding CounterEndColdWater}" />
+            <TextBox Height="23" TextWrapping="Wrap"  Text="{Binding CounterEndEnergy}" />
+            <Button x:Name="button_add" Content="Zapisz" Height="23" FontSize="8" Click="button_add_Click"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="270" Margin="2,3,0,0" VerticalAlignment="Top" Width="100">
+            <Label Content="Nieruchomość" Height="23" FontSize="8"/>
+            <Label Content="Użytkownik" Height="23" FontSize="8"/>
+            <Label Content="Od" Height="23" FontSize="8"/>
+            <Label Content="Fo" Height="23" FontSize="8"/>
+            <Label Content="Licznik ciepła woda start" Height="23" FontSize="8"/>
+            <Label Content="Licznik zimna woda start" Height="23" FontSize="8"/>
+            <Label Content="Licznik energia start" Height="23" FontSize="8"/>
+            <Label Content="Licznik ciepła woda koniec" Height="23" FontSize="8"/>
+            <Label Content="Licznik zimna woda koniec" Height="23" FontSize="8"/>
+            <Label Content="Licznik energia koniec" Height="23" FontSize="8"/>
+            <Button x:Name="button_cancel" Content="Anuluj" Height="23" FontSize="8" Click="button_cancel_Click"/>
+        </StackPanel>
+
+    </Grid>
+</Window>

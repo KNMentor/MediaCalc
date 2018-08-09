@@ -1,0 +1,12 @@
+C:\Users\IDEAPAD\documents\visual studio 2015\Projects\MediaKalk\TestMediaKalk\bin\Debug\TestMediaKalk.exe.config
+C:\Users\IDEAPAD\documents\visual studio 2015\Projects\MediaKalk\TestMediaKalk\bin\Debug\TestMediaKalk.exe
+C:\Users\IDEAPAD\documents\visual studio 2015\Projects\MediaKalk\TestMediaKalk\bin\Debug\TestMediaKalk.pdb
+C:\Users\IDEAPAD\documents\visual studio 2015\Projects\MediaKalk\TestMediaKalk\bin\Debug\MediaCalc.L.dll
+C:\Users\IDEAPAD\documents\visual studio 2015\Projects\MediaKalk\TestMediaKalk\bin\Debug\EntityFramework.dll
+C:\Users\IDEAPAD\documents\visual studio 2015\Projects\MediaKalk\TestMediaKalk\bin\Debug\MediaCalc.L.pdb
+C:\Users\IDEAPAD\documents\visual studio 2015\Projects\MediaKalk\TestMediaKalk\bin\Debug\EntityFramework.xml
+C:\Users\IDEAPAD\documents\visual studio 2015\Projects\MediaKalk\TestMediaKalk\obj\Debug\TestMediaKalk.csprojResolveAssemblyReference.cache
+C:\Users\IDEAPAD\documents\visual studio 2015\Projects\MediaKalk\TestMediaKalk\obj\Debug\TestMediaKalk.exe
+C:\Users\IDEAPAD\documents\visual studio 2015\Projects\MediaKalk\TestMediaKalk\obj\Debug\TestMediaKalk.pdb
+C:\Users\IDEAPAD\documents\visual studio 2015\Projects\MediaKalk\TestMediaKalk\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\IDEAPAD\documents\visual studio 2015\Projects\MediaKalk\TestMediaKalk\bin\Debug\EntityFramework.SqlServer.xml

@@ -1,0 +1,46 @@
+﻿<Window x:Class="MediaCalc.V.ConstFeesAdd"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MediaCalc.V"
+        mc:Ignorable="d"
+        Title="ConstFeesAdd" Height="322.881" Width="357.839">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="1">
+            <ComboBox x:Name="comboBox_flats" SelectedItem="{Binding Flat}"/>
+            <DatePicker x:Name="datepicker_from"  SelectedDate="{Binding From}"/>
+            <DatePicker x:Name="datepicker_to" SelectedDate="{Binding To}"/>
+            <TextBox Height="23" TextWrapping="Wrap" Text="{Binding RentValue}" />
+            <TextBox Height="23" TextWrapping="Wrap" Text="{Binding Internet}" />
+            <TextBox Height="23" TextWrapping="Wrap" Text="{Binding Tv}" />
+            <TextBox Height="23" TextWrapping="Wrap" Text="{Binding Gas}" />
+            <TextBox Height="23" TextWrapping="Wrap" Text="{Binding Garbage}" />
+            <TextBox Height="23" TextWrapping="Wrap" Text="{Binding ColdWaterValueForUnit}" />
+            <TextBox Height="23" TextWrapping="Wrap" Text="{Binding HotWaterValueForUnit}" />
+            <TextBox Height="23" TextWrapping="Wrap" Text="{Binding EnergyValueForUnit}" />
+            <Button x:Name="button_saveConstFees" Content="Zapisz " Click="button_saveConstFees_Click"/>
+        </StackPanel>
+        
+        <StackPanel>
+            <Label Content="Nieruchomość" Height="23"/>
+            <Label Content="Data Od" Height="23"/>
+            <Label Content="Data Do" Height="23"/>
+            <Label Content="Czynsz" Height="23"/>
+            <Label Content="Internet" Height="23"/>
+            <Label Content="Telewizja" Height="23"/>
+            <Label Content="Gaz" Height="23"/>
+            <Label Content="Śmieci" Height="23"/>
+            <Label Content="Woda zimna - stawka" Height="23"/>
+            <Label Content="Woda ciepła - stawka" Height="23"/>
+            <Label Content="Energia - stawka" Height="23"/>
+            <Button x:Name="button_discardConstFees" Content="Zapisz " Click="button_discardConstFees_Click"/>
+
+        </StackPanel>
+
+    </Grid>
+</Window>
