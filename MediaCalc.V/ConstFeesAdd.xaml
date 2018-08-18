@@ -18,8 +18,8 @@
             <TextBox Height="23" TextWrapping="Wrap" Text="{Binding RentValue}" />
             <TextBox Height="23" TextWrapping="Wrap" Text="{Binding Internet}" />
             <TextBox Height="23" TextWrapping="Wrap" Text="{Binding Tv}" />
-            <TextBox Height="23" TextWrapping="Wrap" Text="{Binding Gas}" />
             <TextBox Height="23" TextWrapping="Wrap" Text="{Binding Garbage}" />
+            <TextBox Height="23" TextWrapping="Wrap" Text="{Binding GasValueForUnit}" />
             <TextBox Height="23" TextWrapping="Wrap" Text="{Binding ColdWaterValueForUnit}" />
             <TextBox Height="23" TextWrapping="Wrap" Text="{Binding HotWaterValueForUnit}" />
             <TextBox Height="23" TextWrapping="Wrap" Text="{Binding EnergyValueForUnit}" />
@@ -33,8 +33,8 @@
             <Label Content="Czynsz" Height="23"/>
             <Label Content="Internet" Height="23"/>
             <Label Content="Telewizja" Height="23"/>
-            <Label Content="Gaz" Height="23"/>
             <Label Content="Śmieci" Height="23"/>
+            <Label Content="Gaz - stawka" Height="23"/>
             <Label Content="Woda zimna - stawka" Height="23"/>
             <Label Content="Woda ciepła - stawka" Height="23"/>
             <Label Content="Energia - stawka" Height="23"/>

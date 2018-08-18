@@ -43,6 +43,8 @@ namespace MediaCalc.L.Model
         public double CounterStartColdWater { get; set; }
         [DisplayName("Licznik EW początek")]
         public double CounterStartEnergy { get; set; }
+        [DisplayName("Licznik G początek")]
+        public double CounterStartGas { get; set; }
 
         [DisplayName("hidden-CounterMiddleHotWater")]
         public double CounterMiddleHotWater { get; set; }
@@ -50,6 +52,8 @@ namespace MediaCalc.L.Model
         public double CounterMiddleColdWater { get; set; }
         [DisplayName("hidden-CounterMiddleEnergy")]
         public double CounterMiddleEnergy { get; set; }
+        [DisplayName("hidden-CounterMiddleGas")]
+        public double CounterMiddleGas { get; set; }
 
 
         [DisplayName("Licznik CW koniec")]
@@ -58,21 +62,28 @@ namespace MediaCalc.L.Model
         public double CounterEndColdWater { get; set; }
         [DisplayName("Licznik E koniec")]
         public double CounterEndEnergy { get; set; }
+        [DisplayName("Licznik G koniec")]
+        public double CounterEndGas { get; set; }
         #endregion
 
 
         [DisplayName("hidden-DeltaHotWater")]
-        public double DeltaHotWater { get; set; }
+        public double DeltaHotWaterForThisUser { get; set; }
         [DisplayName("hidden-DeltaColdWater")]
-        public double DeltaColdWater { get; set; }
+        public double DeltaColdWaterForThisUser { get; set; }
         [DisplayName("hidden-DeltaEnergyWater")]
-        public double DeltaEnergyWater { get; set; }
+        public double DeltaEnergyForThisUser { get; set; }
+        [DisplayName("hidden-DeltaGas")]
+        public double DeltaGasForThisUser { get; set; }
 
 
         [DisplayName("Suma mediów zmiennych")]
         public double VariablesSum { get; set; }
         [DisplayName("Suma mediów stałych")]
         public double ConstSum { get; set; }
+
+        [DisplayName("Opłacone")]
+        public bool Paid { get; set; }
 
         public Lease ShallowCopy()
         {

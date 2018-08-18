@@ -69,6 +69,18 @@
     <Compile Include="Migrations\201808091917360_FlatUpdated.Designer.cs">
       <DependentUpon>201808091917360_FlatUpdated.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201808181043358_LeasePaidAdded.cs" />
+    <Compile Include="Migrations\201808181043358_LeasePaidAdded.Designer.cs">
+      <DependentUpon>201808181043358_LeasePaidAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808181144227_NamesChanegd.cs" />
+    <Compile Include="Migrations\201808181144227_NamesChanegd.Designer.cs">
+      <DependentUpon>201808181144227_NamesChanegd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808181401394_GasChanged.cs" />
+    <Compile Include="Migrations\201808181401394_GasChanged.Designer.cs">
+      <DependentUpon>201808181401394_GasChanged.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\BoolHelper.cs" />
     <Compile Include="Model\Flat.cs" />
@@ -87,6 +99,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201808091917360_FlatUpdated.resx">
       <DependentUpon>201808091917360_FlatUpdated.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808181043358_LeasePaidAdded.resx">
+      <DependentUpon>201808181043358_LeasePaidAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808181144227_NamesChanegd.resx">
+      <DependentUpon>201808181144227_NamesChanegd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808181401394_GasChanged.resx">
+      <DependentUpon>201808181401394_GasChanged.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

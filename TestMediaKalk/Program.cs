@@ -15,15 +15,11 @@ namespace TestMediaKalk
         {
             MediaCalcDbContext dbContext = new MediaCalcDbContext();
             Logic logic = new Logic();
-            Lease lease = dbContext.Leases.Where(l => l.User.Name == "Tomasz").FirstOrDefault<Lease>();
+            Lease lease = dbContext.Leases.Where(l => l.UserId == 3).FirstOrDefault<Lease>();
 
-            //logic.TotalConstMoneyForOneLease(1, lease.From, lease.To);
-            logic.TotalConstMoneyForOneUserStartedIn(dbContext.Users.Where(x => x.Id == 3).FirstOrDefault<User>(), new DateTime(2018, 1, 1), new DateTime(2018, 1, 6));
-
-
-            Console.WriteLine(logic.CountUsersInFlat(1, new DateTime(2018, 1, 2)));
-
-
+            logic.TotalVarMoneyForOneLease(lease);
+            logic.TotalConstMoneyForOneLease(lease);
+            
             Console.ReadKey();
         }
     }

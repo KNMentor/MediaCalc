@@ -35,11 +35,11 @@ namespace MediaCalc.L.Model
         
         public double Tv { get; set; }
 
-        [DisplayName("Gaz")]
-        public double Gas { get; set; }
-
         [DisplayName("Śmieci")]
         public double Garbage { get; set; }
+
+        [DisplayName("Stawka za gaz")]
+        public double GasValueForUnit { get; set; }
         
         [DisplayName("Stawka za ciepłą wodę")]
         public double HotWaterValueForUnit { get; set; }
@@ -52,7 +52,7 @@ namespace MediaCalc.L.Model
 
         public double SumOfConst()
         {
-            return RentValue + Internet + Tv + Gas + Garbage;
+            return RentValue + Internet + Tv + Garbage;
         }
 
 
