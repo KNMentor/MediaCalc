@@ -66,6 +66,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="UserAdd.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FlatAdd.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="ConstFeesAdd.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -81,6 +89,12 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserAdd.xaml.cs">
+      <DependentUpon>UserAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FlatAdd.xaml.cs">
+      <DependentUpon>FlatAdd.xaml</DependentUpon>
     </Compile>
     <Compile Include="ConstFeesAdd.xaml.cs">
       <DependentUpon>ConstFeesAdd.xaml</DependentUpon>
@@ -129,6 +143,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Database\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="mentor.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

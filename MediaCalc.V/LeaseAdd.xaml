@@ -5,37 +5,41 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MediaCalc.V"
         mc:Ignorable="d"
-        Title="LeaseAdd" Height="350" Width="300">
+        Title="Dodawanie/Edycja wynajmu"  Height="460" Width="800">
     <Grid>
-        <StackPanel HorizontalAlignment="Left" Height="300" Margin="102,2,0,0" VerticalAlignment="Top" Width="185">
-            <ComboBox x:Name="comboBox_flats"  SelectedItem="{Binding Flat}"/>
-            <ComboBox x:Name="comboBox_users"  SelectedItem="{Binding User}"/>
-            <DatePicker SelectedDate="{Binding From}"/>
-            <DatePicker SelectedDate="{Binding To}"/>
-            <TextBox Height="23" TextWrapping="Wrap"  Text="{Binding CounterStartGas}" />
-            <TextBox Height="23" TextWrapping="Wrap"  Text="{Binding CounterStartHotWater}" />
-            <TextBox Height="23" TextWrapping="Wrap"  Text="{Binding CounterStartColdWater}" />
-            <TextBox Height="23" TextWrapping="Wrap"  Text="{Binding CounterStartEnergy}" />
-            <TextBox Height="23" TextWrapping="Wrap"  Text="{Binding CounterEndGas}" />
-            <TextBox Height="23" TextWrapping="Wrap"  Text="{Binding CounterEndHotWater}" />
-            <TextBox Height="23" TextWrapping="Wrap"  Text="{Binding CounterEndColdWater}" />
-            <TextBox Height="23" TextWrapping="Wrap"  Text="{Binding CounterEndEnergy}" />
-            <Button x:Name="button_add" Content="Zapisz" Height="23" FontSize="8" Click="button_add_Click"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="1">
+            <ComboBox  Style="{DynamicResource ComboBoxStyle}" x:Name="comboBox_flats"  SelectedItem="{Binding Flat}"/>
+            <ComboBox  Style="{DynamicResource ComboBoxStyle}" x:Name="comboBox_users"  SelectedItem="{Binding User}"/>
+            <DatePicker  Style="{DynamicResource DatePickerStyle}" SelectedDate="{Binding From}"/>
+            <DatePicker  Style="{DynamicResource DatePickerStyle}" SelectedDate="{Binding To}"/>
+            <TextBox  Style="{DynamicResource TextBoxStyle}" TextWrapping="Wrap"  Text="{Binding CounterStartGas}" />
+            <TextBox  Style="{DynamicResource TextBoxStyle}" TextWrapping="Wrap"  Text="{Binding CounterStartHotWater}" />
+            <TextBox  Style="{DynamicResource TextBoxStyle}" TextWrapping="Wrap"  Text="{Binding CounterStartColdWater}" />
+            <TextBox  Style="{DynamicResource TextBoxStyle}" TextWrapping="Wrap"  Text="{Binding CounterStartEnergy}" />
+            <TextBox  Style="{DynamicResource TextBoxStyle}" TextWrapping="Wrap"  Text="{Binding CounterEndGas}" />
+            <TextBox  Style="{DynamicResource TextBoxStyle}" TextWrapping="Wrap"  Text="{Binding CounterEndHotWater}" />
+            <TextBox  Style="{DynamicResource TextBoxStyle}" TextWrapping="Wrap"  Text="{Binding CounterEndColdWater}" />
+            <TextBox  Style="{DynamicResource TextBoxStyle}" TextWrapping="Wrap"  Text="{Binding CounterEndEnergy}" />
+            <Button Style="{DynamicResource ButtonStyle}" x:Name="button_add" Content="Zapisz" Click="button_add_Click"/>
         </StackPanel>
-        <StackPanel HorizontalAlignment="Left"  Margin="2,3,0,0" VerticalAlignment="Top" Width="100">
-            <Label Content="Nieruchomość" Height="23" FontSize="8"/>
-            <Label Content="Użytkownik" Height="23" FontSize="8"/>
-            <Label Content="Od" Height="23" FontSize="8"/>
-            <Label Content="Fo" Height="23" FontSize="8"/>
-            <Label Content="Licznik gaz start" Height="23" FontSize="8"/>
-            <Label Content="Licznik ciepła woda start" Height="23" FontSize="8"/>
-            <Label Content="Licznik zimna woda start" Height="23" FontSize="8"/>
-            <Label Content="Licznik energia start" Height="23" FontSize="8"/>
-            <Label Content="Licznik gaz koniec" Height="23" FontSize="8"/>
-            <Label Content="Licznik ciepła woda koniec" Height="23" FontSize="8"/>
-            <Label Content="Licznik zimna woda koniec" Height="23" FontSize="8"/>
-            <Label Content="Licznik energia koniec" Height="23" FontSize="8"/>
-            <Button x:Name="button_cancel" Content="Anuluj" Height="23" FontSize="8" Click="button_cancel_Click"/>
+        <StackPanel>
+            <Label Style="{DynamicResource LabelStyle}" Content="Nieruchomość"/>
+            <Label Style="{DynamicResource LabelStyle}" Content="Użytkownik" />
+            <Label Style="{DynamicResource LabelStyle}" Content="Od"/>
+            <Label Style="{DynamicResource LabelStyle}" Content="Do"/>
+            <Label Style="{DynamicResource LabelStyle}" Content="Licznik gaz start"/>
+            <Label Style="{DynamicResource LabelStyle}" Content="Licznik ciepła woda start"/>
+            <Label Style="{DynamicResource LabelStyle}" Content="Licznik zimna woda start"/>
+            <Label Style="{DynamicResource LabelStyle}" Content="Licznik energia start"/>
+            <Label Style="{DynamicResource LabelStyle}" Content="Licznik gaz koniec"/>
+            <Label Style="{DynamicResource LabelStyle}" Content="Licznik ciepła woda koniec"/>
+            <Label Style="{DynamicResource LabelStyle}" Content="Licznik zimna woda koniec"/>
+            <Label Style="{DynamicResource LabelStyle}" Content="Licznik energia koniec"/>
+            <Button  Style="{DynamicResource ButtonStyle}" x:Name="button_cancel" Content="Anuluj" Click="button_cancel_Click"/>
         </StackPanel>
 
     </Grid>

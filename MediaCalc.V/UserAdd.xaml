@@ -1,0 +1,32 @@
+﻿<Window x:Class="MediaCalc.V.UserAdd"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MediaCalc.V"
+        mc:Ignorable="d"
+        Title="Dodawanie/Edycja Użytkowników" Height="195" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="1">
+            <TextBox  Style="{DynamicResource TextBoxStyle}" TextWrapping="Wrap"  Text="{Binding Name}" />
+            <TextBox  Style="{DynamicResource TextBoxStyle}" TextWrapping="Wrap"  Text="{Binding Surname}" />
+            <TextBox  Style="{DynamicResource TextBoxStyle}" TextWrapping="Wrap"  Text="{Binding Pesel}" />
+            <TextBox  Style="{DynamicResource TextBoxStyle}" TextWrapping="Wrap"  Text="{Binding Phone}" />
+            <Button Style="{DynamicResource ButtonStyle}" x:Name="button_add" Content="Zapisz " Click="button_add_Click"/>
+        </StackPanel>
+
+        <StackPanel>
+            <Label Style="{DynamicResource LabelStyle}" Content="Imię"/>
+            <Label Style="{DynamicResource LabelStyle}" Content="Nazwisko"/>
+            <Label Style="{DynamicResource LabelStyle}" Content="PESEL"/>
+            <Label Style="{DynamicResource LabelStyle}" Content="Numer telefonu"/>
+            <Button Style="{DynamicResource ButtonStyle}" x:Name="button_cancel" Content="Anuluj " Click="button_cancel_Click"/>
+
+        </StackPanel>
+
+    </Grid>
+</Window>

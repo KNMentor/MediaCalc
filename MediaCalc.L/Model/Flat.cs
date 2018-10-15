@@ -45,5 +45,10 @@ namespace MediaCalc.L.Model
         {
             return this.Name + " | " + this.Street + " | " + this.HomeNumber + " | " + this.RoomNumber;
         }
+
+        public Flat ShallowCopy()
+        {
+            return (Flat)this.MemberwiseClone();
+        }
     }
 }

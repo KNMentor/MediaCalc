@@ -5,40 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MediaCalc.V"
         mc:Ignorable="d"
-        Title="ConstFeesAdd" Height="322.881" Width="357.839">
+        Title="Dodawanie/Edycja Opłat" Height="425" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
             <ColumnDefinition Width="2*"/>
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Column="1">
-            <ComboBox x:Name="comboBox_flats" SelectedItem="{Binding Flat}"/>
-            <DatePicker x:Name="datepicker_from"  SelectedDate="{Binding From}"/>
-            <DatePicker x:Name="datepicker_to" SelectedDate="{Binding To}"/>
-            <TextBox Height="23" TextWrapping="Wrap" Text="{Binding RentValue}" />
-            <TextBox Height="23" TextWrapping="Wrap" Text="{Binding Internet}" />
-            <TextBox Height="23" TextWrapping="Wrap" Text="{Binding Tv}" />
-            <TextBox Height="23" TextWrapping="Wrap" Text="{Binding Garbage}" />
-            <TextBox Height="23" TextWrapping="Wrap" Text="{Binding GasValueForUnit}" />
-            <TextBox Height="23" TextWrapping="Wrap" Text="{Binding ColdWaterValueForUnit}" />
-            <TextBox Height="23" TextWrapping="Wrap" Text="{Binding HotWaterValueForUnit}" />
-            <TextBox Height="23" TextWrapping="Wrap" Text="{Binding EnergyValueForUnit}" />
-            <Button x:Name="button_saveConstFees" Content="Zapisz " Click="button_saveConstFees_Click"/>
+            <ComboBox Style="{DynamicResource ComboBoxStyle}" x:Name="comboBox_flats" SelectedItem="{Binding Flat}"/>
+            <DatePicker Style="{DynamicResource DatePickerStyle}" x:Name="datepicker_from"  SelectedDate="{Binding From}"/>
+            <DatePicker Style="{DynamicResource DatePickerStyle}" x:Name="datepicker_to" SelectedDate="{Binding To}"/>
+            <TextBox Style="{DynamicResource TextBoxStyle}" TextWrapping="Wrap" Text="{Binding RentValue}" />
+            <TextBox Style="{DynamicResource TextBoxStyle}" TextWrapping="Wrap" Text="{Binding Internet}" />
+            <TextBox Style="{DynamicResource TextBoxStyle}" TextWrapping="Wrap" Text="{Binding Tv}" />
+            <TextBox Style="{DynamicResource TextBoxStyle}" TextWrapping="Wrap" Text="{Binding Garbage}" />
+            <TextBox Style="{DynamicResource TextBoxStyle}" TextWrapping="Wrap" Text="{Binding GasValueForUnit}" />
+            <TextBox Style="{DynamicResource TextBoxStyle}" TextWrapping="Wrap" Text="{Binding ColdWaterValueForUnit}" />
+            <TextBox Style="{DynamicResource TextBoxStyle}" TextWrapping="Wrap" Text="{Binding HotWaterValueForUnit}" />
+            <TextBox Style="{DynamicResource TextBoxStyle}" TextWrapping="Wrap" Text="{Binding EnergyValueForUnit}" />
+            <Button Style="{DynamicResource ButtonStyle}" x:Name="button_saveConstFees" Content="Zapisz " Click="button_saveConstFees_Click"/>
         </StackPanel>
         
         <StackPanel>
-            <Label Content="Nieruchomość" Height="23"/>
-            <Label Content="Data Od" Height="23"/>
-            <Label Content="Data Do" Height="23"/>
-            <Label Content="Czynsz" Height="23"/>
-            <Label Content="Internet" Height="23"/>
-            <Label Content="Telewizja" Height="23"/>
-            <Label Content="Śmieci" Height="23"/>
-            <Label Content="Gaz - stawka" Height="23"/>
-            <Label Content="Woda zimna - stawka" Height="23"/>
-            <Label Content="Woda ciepła - stawka" Height="23"/>
-            <Label Content="Energia - stawka" Height="23"/>
-            <Button x:Name="button_discardConstFees" Content="Zapisz " Click="button_discardConstFees_Click"/>
+            <Label  Style="{DynamicResource LabelStyle}" Content="Nieruchomość"/>
+            <Label  Style="{DynamicResource LabelStyle}" Content="Data Od"/>
+            <Label  Style="{DynamicResource LabelStyle}" Content="Data Do"/>
+            <Label  Style="{DynamicResource LabelStyle}" Content="Czynsz"/>
+            <Label  Style="{DynamicResource LabelStyle}" Content="Internet"/>
+            <Label  Style="{DynamicResource LabelStyle}" Content="Telewizja"/>
+            <Label  Style="{DynamicResource LabelStyle}" Content="Śmieci"/>
+            <Label  Style="{DynamicResource LabelStyle}" Content="Gaz - stawka"/>
+            <Label  Style="{DynamicResource LabelStyle}" Content="Woda zimna - stawka"/>
+            <Label  Style="{DynamicResource LabelStyle}" Content="Woda ciepła - stawka"/>
+            <Label  Style="{DynamicResource LabelStyle}" Content="Energia - stawka"/>
+            <Button Style="{DynamicResource ButtonStyle}" x:Name="button_discardConstFees" Content="Anuluj " Click="button_discardConstFees_Click"/>
 
         </StackPanel>
 

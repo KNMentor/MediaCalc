@@ -35,5 +35,10 @@ namespace MediaCalc.L.Model
         {
             return this.Pesel + " | " + this.Name + " | " + this.Surname;
         }
+
+        public User ShallowCopy()
+        {
+            return (User)this.MemberwiseClone();
+        }
     }
 }

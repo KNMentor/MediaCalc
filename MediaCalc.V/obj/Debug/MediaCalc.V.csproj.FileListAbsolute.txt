@@ -46,3 +46,8 @@ C:\Users\IDEAPAD\Documents\Visual Studio 2015\Projects\MediaKalk\MediaCalc\Media
 C:\Users\IDEAPAD\Documents\Visual Studio 2015\Projects\MediaKalk\MediaCalc\MediaCalc.V\obj\Debug\MediaCalc.V.g.resources
 C:\Users\IDEAPAD\Documents\Visual Studio 2015\Projects\MediaKalk\MediaCalc\MediaCalc.V\obj\Debug\MediaCalc.V.Properties.Resources.resources
 C:\Users\IDEAPAD\Documents\Visual Studio 2015\Projects\MediaKalk\MediaCalc\MediaCalc.V\obj\Debug\MediaCalc.V.csproj.GenerateResource.Cache
+C:\Users\IDEAPAD\Documents\Visual Studio 2015\Projects\MediaKalk\MediaCalc\MediaCalc.V\obj\Debug\App.baml
+C:\Users\IDEAPAD\Documents\Visual Studio 2015\Projects\MediaKalk\MediaCalc\MediaCalc.V\obj\Debug\UserAdd.g.cs
+C:\Users\IDEAPAD\Documents\Visual Studio 2015\Projects\MediaKalk\MediaCalc\MediaCalc.V\obj\Debug\FlatAdd.g.cs
+C:\Users\IDEAPAD\Documents\Visual Studio 2015\Projects\MediaKalk\MediaCalc\MediaCalc.V\obj\Debug\UserAdd.baml
+C:\Users\IDEAPAD\Documents\Visual Studio 2015\Projects\MediaKalk\MediaCalc\MediaCalc.V\obj\Debug\FlatAdd.baml

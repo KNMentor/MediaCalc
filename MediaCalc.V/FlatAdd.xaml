@@ -1,0 +1,38 @@
+﻿<Window x:Class="MediaCalc.V.FlatAdd"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MediaCalc.V"
+        mc:Ignorable="d"
+        Title="Dodawanie/Edycja Nieruchomości" Height="295" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="1">
+            <TextBox  Style="{DynamicResource TextBoxStyle}" TextWrapping="Wrap"  Text="{Binding Name}" />
+            <TextBox  Style="{DynamicResource TextBoxStyle}" TextWrapping="Wrap"  Text="{Binding City}" />
+            <TextBox  Style="{DynamicResource TextBoxStyle}" TextWrapping="Wrap"  Text="{Binding PostCode}" />
+            <TextBox  Style="{DynamicResource TextBoxStyle}" TextWrapping="Wrap"  Text="{Binding Street}" />
+            <TextBox  Style="{DynamicResource TextBoxStyle}" TextWrapping="Wrap"  Text="{Binding HomeNumber}" />
+            <TextBox  Style="{DynamicResource TextBoxStyle}" TextWrapping="Wrap"  Text="{Binding RoomNumber}" />
+            <TextBox  Style="{DynamicResource TextBoxStyle}" TextWrapping="Wrap"  Text="{Binding MaxUsers}" />
+            <Button Style="{DynamicResource ButtonStyle}" x:Name="button_saveFlatAdd" Content="Zapisz " Click="button_saveFlatAdd_Click"/>
+        </StackPanel>
+
+        <StackPanel>
+            <Label Style="{DynamicResource LabelStyle}" Content="Nazwa"/>
+            <Label Style="{DynamicResource LabelStyle}" Content="Miasto"/>
+            <Label Style="{DynamicResource LabelStyle}" Content="Kod pocztowy"/>
+            <Label Style="{DynamicResource LabelStyle}" Content="Ulica"/>
+            <Label Style="{DynamicResource LabelStyle}" Content="Numer domu"/>
+            <Label Style="{DynamicResource LabelStyle}" Content="Numer pokoju"/>
+            <Label Style="{DynamicResource LabelStyle}" Content="Max mieszkańców"/>
+            <Button Style="{DynamicResource ButtonStyle}" x:Name="button_discardFlatAdd" Content="Anuluj " Click="button_discardFlatAdd_Click"/>
+
+        </StackPanel>
+
+    </Grid>
+</Window>
